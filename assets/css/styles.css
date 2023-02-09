@@ -69,3 +69,46 @@
 }
 
 /*        Onur IŞIK         */
+
+/*     muhammet çelikci    */
+.GameInfo{
+    text-align: center;
+    height: 800px;
+    background-color: rgba(230,232,244,255);
+    box-sizing: border-box;
+}
+.StaticsBox,.GameInformatıon{
+    height: 53%;
+    width: 35%;
+    background-color: white;
+    float: left;
+    margin-top: 3%;
+
+  
+    
+}
+.StaticsBox{
+    margin-left: 16%;
+
+}
+.GameInformatıon{
+    margin-left: 2%;
+}
+.GameInformatıon h1{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.GameInformatıon p{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-right: 3%;
+}
+.GameInfo a{
+    cursor: pointer;
+    color: rgb(69, 177, 255);
+    text-decoration: none;
+}
+/*    muhammet çelikci*/
