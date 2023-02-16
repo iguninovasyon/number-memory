@@ -30,6 +30,33 @@
     animation: fadeIn 3s infinite;
     
 }
+.GameStart .nextLevelInput{
+    background: rgba(0, 0, 100, 0.2);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    appearance: none;
+    margin: 15px;
+}
+.GameStart .nextLevel{
+    padding: 12px 30px;
+    background: rgb(255, 209, 84);
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+  
+    font-weight: bold;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    color: rgb(51, 51, 51) !important;
+    text-decoration: none !important;
+}
 
 @keyframes fadeIn {
     0% { opacity: 0.6; }

@@ -7,8 +7,6 @@ var randomNumber;
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
-
-
 function gameStart() {
     document.getElementById('gameStart-items').style.display = "none";
     document.getElementById('btn_gameStart').style.display = "none";
