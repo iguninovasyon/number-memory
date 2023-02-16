@@ -40,7 +40,7 @@
     box-shadow: none;
     border-color: transparent;
     appearance: none;
-    margin: 15px;
+    width: 100%;
 }
 .GameStart .nextLevel{
     padding: 12px 30px;
