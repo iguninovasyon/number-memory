@@ -12,20 +12,30 @@
 <body>
     <!--Onur Işık-->
     <div class="GameStart">
+        <div id="gameStart-items" style="text-align: center;">
+            <div class="GameStart__box">
+                <div class="GameStart__first">
+                    <div>1</div>
+                    <div>3</div>
+                </div>
+                <div class="GameStart__second">
+                    <div>2</div>
+                    <div>?</div>
+                </div>
+            </div>
+            <h1 class="GameStart__h1" >Number Memory</h1>
+            <p class="GameStart__h2">The average person can remember 7 numbers at once.Can you do more?</p>
 
-        <div class="GameStart__box">
-            <div class="GameStart__first">
-                <div>1</div>
-                <div>3</div>
-            </div>
-            <div class="GameStart__second">
-                <div>2</div>
-                <div>?</div>
-            </div>
         </div>
-        <h1 class="GameStart__h1">Number Memory</h1>
-        <p class="GameStart__h2">The average person can remember 7 numbers at once.Can you do more?</p>
-        <button class="GameStart__button">Start</button>
+        <h1 style="display: none;text-align: center;font-size: 148px;" id="text">6</h1>
+        <div id="inputBox" style="display: none;text-align: center;">
+            <h2>Sayıyı Hatırlıyor Musun ?</h2>
+            <p>Lütfen entera basınız</p>
+            <input type="text" style="width: 500px;height: 50px;">            
+        </div>
+       
+        <button onclick="gameStart()" id="btn_gameStart"  class="GameStart__button">Start</button>
+        
 
     </div>
 
