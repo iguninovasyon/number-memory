@@ -1,6 +1,6 @@
 //global variables
 var minValue = 1;
-var max = 10;
+var max=10;
 var level = 1;
 var randomNumber;
 
@@ -24,29 +24,41 @@ function gameStart() {
 
 }
 function getRandomNumber() {
-    /*Umut Tosun*/
-    minValue *= 10;
-    level++;
-    max = 1;
-    document.getElementById('text').innerText = Math.floor(Math.random() * ((max - 1) - minValue)) + minValue;
+    /*Umut Tosun*/ 
+    max=1; 
     for (var i = 1; i <= level; i++)  max = max * 10;
+    randomNumber=Math.floor(Math.random() * ((max - 1) - minValue)) + minValue;
+    document.getElementById('text').innerText = randomNumber; 
+    level++;
+    minValue *= 10;
+    
 }
   
 function gameOver() {
-    /*Adem Eraslan
+    /*Muhammet Çelikçi
     https://humanbenchmark.com/tests/number-memory burdaki mantıgın aynısı yapılıcak
     */
 }
 function getResult(input) {
-    /*Onur Işık*/
+    console.log(input);
+    console.log(randomNumber);
+   if(input==randomNumber) return true;
+   else return false;
 }
 function restartGame() {
-    /*Can Tarakçı*/
+    /*Onur Işık*/
+    /* ilk sahne tekrardan gelicek
+    oyunu başlat butonu aktif olucak 
+    oyun üzerindeki yazılar aktif olucak
+    diğer herşey pasif olucak [ input next level vs vs]*/
 }
 function nextLevel() {
     /*Umut Tosun*/
-    //var bool=getResult();
-    var bool=true;
+    
+    var input=document.getElementById('input').value;
+    document.getElementById('input').value="";
+    var bool=getResult(input);  
+    console.log(bool);
     if(bool==true)
     {
     document.getElementById('gameStart-items').style.display = "none";
@@ -58,6 +70,7 @@ function nextLevel() {
 
     delay(1000).then(() => 
      { 
+     
      document.getElementById('inputBox').style.display = "block";
      document.getElementById('nextLevel').style.display = "block"
      document.getElementById('text').style.display = "none";
