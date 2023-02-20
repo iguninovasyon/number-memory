@@ -37,7 +37,11 @@
        
         <button onclick="gameStart()" id="btn_gameStart"  class="GameStart__button">Start</button>
         <button onclick="nextLevel()" style="display: none;text-align: center;" class="nextLevel"  id="nextLevel">Onayla</button>
-        
+        <div id="gameover" style="display: none;">
+            <p style="margin-bottom: 20px;">Nasıl karşılaştırdığınızı görmek için puanınızı kaydedin</p>
+            <button id="kaydet">skoru kaydet</button>
+            <button onclick="restartGame()" id="tekrar">tekrar oyna</button>
+           </div>
 
     </div>
 
@@ -55,6 +59,7 @@
             <p><a href="https://en.wikipedia.org/wiki/Mnemonic">Mnemonic devices</a></p>
         </div>
     </div>
+   
 
     <!--Can Tarakçı-->
     <div class="OtherGameInfo"></div>

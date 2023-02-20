@@ -35,10 +35,13 @@ function getRandomNumber() {
 }
   
 function gameOver() {
-    /*Muhammet Çelikçi
-    https://humanbenchmark.com/tests/number-memory burdaki mantıgın aynısı yapılıcak
-    */
-}
+document.getElementById('inputBox').style.display = "none";
+document.getElementById('nextLevel').style.display = "none";
+document.getElementById('gameover').style.display = "block";
+console.log(test);
+  
+  }
+
 function getResult(input) {
     console.log(input);
     console.log(randomNumber);
