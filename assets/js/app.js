@@ -38,6 +38,9 @@ function gameOver() {
 document.getElementById('inputBox').style.display = "none";
 document.getElementById('nextLevel').style.display = "none";
 document.getElementById('gameover').style.display = "block";
+document.getElementById('kaydet').style.display = "inline";
+document.getElementById('GameOver--P').style.display = "block";
+document.getElementById('tekrar').style.display = "inline";
 console.log(test);
   
   }
@@ -54,6 +57,16 @@ function restartGame() {
     oyunu başlat butonu aktif olucak 
     oyun üzerindeki yazılar aktif olucak
     diğer herşey pasif olucak [ input next level vs vs]*/
+    document.getElementById('gameStart-items').style.display = "block";
+    document.getElementById('btn_gameStart').style.display = "block";
+    document.getElementById('kaydet').style.display = "none";
+    document.getElementById('GameOver--P').style.display = "none";
+    document.getElementById('tekrar').style.display = "none";
+    minValue = 1;
+    max=10;
+    level = 1;
+
+
 }
 function nextLevel() {
     /*Umut Tosun*/
